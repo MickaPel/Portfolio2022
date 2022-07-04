@@ -1,20 +1,144 @@
+@font-face {
+  font-family: 'stalinist_oneregular';
+  src:  url('./Components/fonts/stalinistone-regular-webfont.woff2') format('woff2'),
+        url('./Components/fonts/stalinistone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  height: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 1rem;
+  padding-top: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderComponent {
+  height: 60px;
+  background-color: #DB1F48;
+  transition: background-color 1s;
+}
+
+.HeaderComponent :hover{
+  background-color: #334756;
+}
+
+.Hero {
+  height: calc(100vh - 55px); 
+  background-color: #1A1C20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Projects {
+  margin-top: 10vh;
+  background-color: #1A1C20;
+  display: flex; 
+  align-items: flex-start;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ProjectTitle {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, #F4A442 10%, #4d4d4d 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 40px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0%
+    {background-position: 0}
+  60%
+    {background-position: 180px}
+  110%
+    {background-position: 180px}
+}
+
+.Technologies {
+  background-color: #1A1C20;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.TechnologiesTitle {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, #F4A442 10%, #4d4d4d 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 40px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.Contact {
+  background-color: #1A1C20;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ContactTitle {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, #F4A442 10%, #4d4d4d 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 40px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.Footer {
+  margin-top: 100px;
+  min-height: 55px; 
+  background-color: #282b30;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +146,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

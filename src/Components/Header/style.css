@@ -1,0 +1,12 @@
+.Logo {
+    margin-left: 5px;
+    height: 55px;
+    width: 55px;
+    transition: transform .9s;
+        
+}
+
+/* .Logo:hover {
+    transform-origin: 0 0;
+    transform: scale(1.8, 1.8);
+} */

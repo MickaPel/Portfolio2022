@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'stalinist_oneregular';
+    src: url('../fonts/stalinistone-regular-webfont.woff2') format('woff2'),
+        url('../fonts/stalinistone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.typing_effect_cursor::after {
+    content: "";
+    position: absolute;
+    margin-top: 0px;
+    height: 5vh;
+    border-right: 0.47vw solid #F4A442;
+    animation: blink 2s infinite ease;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .typing_effect_cursor::after {
+        content: "";
+        position: absolute;
+        margin-top: 0px;
+        height: 3vh;
+        border-right: 0.90vw solid #F4A442;
+        animation: blink 2s infinite ease;
+        float:left;
+        text-align: left;
+    }
+}
